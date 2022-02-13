@@ -1,0 +1,25 @@
+letter1{
+    background-color: aqua;
+}
+.info{
+    padding: 12px 24px;
+     cursor: pointer;
+    border-radius: 12px;
+    width: 450px;
+
+}
+.letter1{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 7.4rem;
+    
+
+}
+
+.collage{
+    padding: 50px;
+    margin: -10px 0px -25px;
+    
+    color: #000000;
+
+}
