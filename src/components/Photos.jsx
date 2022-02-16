@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom"
 
 
 const Photos = ({ images }) => {
@@ -17,7 +18,9 @@ const Photos = ({ images }) => {
   let SliderItems = images.map( (item, i) => {
       return (
           <div className={"Photos__item"} key={i}>
-              <img src={item.imagen} alt={"Image " + i} />
+              <Link to={"/product/" + item._id}>
+                <img src={item.image} alt={"Image " + i} /> 
+              </Link> 
           </div>
       );
   } );
