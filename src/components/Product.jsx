@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 const ProductWrapper = styled.div`
     width: 100%;
@@ -46,11 +47,14 @@ const ProductButon = styled.button`
 const Product = ( { id, name, ammout, image, addtocart } ) => {
     return (
         <>
+            <Link to={`/product/${id}`}>
             <ProductWrapper id={id}>
                 <ProductImage src={image} />
                 <ProductName>{name}</ProductName>
                 <ProductButon onClick={() => addtocart()}>Add</ProductButon>
             </ProductWrapper>
+            </Link>
+            
         </>
     );
 };
