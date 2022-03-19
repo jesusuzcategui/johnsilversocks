@@ -7,10 +7,10 @@ import products from "../api/Api";
 
 const Product = () => {
     const [currentProduct, setCurrentProduct] = useState(null);
+    const { idproduct } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        const { idproduct } = useParams();
-        const navigate = useNavigate();
         let filter = products.filter((f) => f._id === parseInt(idproduct));
         if (filter.length === 0) {
             return navigate('/404');
@@ -18,7 +18,7 @@ const Product = () => {
         console.log(filter);
         let currentPro = filter[0];
         setCurrentProduct(currentPro);
-    }, []);
+    }, [idproduct, navigate]);
 
     const ContainerCenter = styled.div`
         width: 100%;
