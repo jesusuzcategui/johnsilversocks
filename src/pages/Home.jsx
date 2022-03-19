@@ -1,7 +1,6 @@
 import styles from "../styles/Home.module.css"
 import logo from "../assets/logo.png"
 import marca from "../assets/marca.png"
-import styled from 'styled-components';
 import products from '../api/Api';
 
 import Gallery from "../components/Gallery";

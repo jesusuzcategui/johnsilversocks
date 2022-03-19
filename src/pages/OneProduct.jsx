@@ -1,5 +1,5 @@
 import Styles from "../styles/OneProduct.module.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 import line from "../assets/Line 2.png";
 import GridProducts from "../components/GridProducts"

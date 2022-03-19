@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { useParams, useNavigate } from "react-router-dom";
 
 import products from "../api/Api";
-import GridProducts from "../components/GridProducts";
 
 
 const Product = () => {

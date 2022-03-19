@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} className={Styles.logo} alt="Website" />
           </Link>
-          {isMobile == false && (
+          {isMobile === false && (
             <ul className={Styles.list}>
               <li className={Styles.menuitem}>
                 <Link to="/About">Nosotros</Link>
@@ -55,7 +55,7 @@ const Navbar = () => {
               <li className={Styles.menuitem}>Contacto</li>
             </ul>
           )}
-          {isMobile == true && (
+          {isMobile === true && (
             <button onClick={() => toggleCart()}>MENU</button>
           )}
           <img src={cart} className={Styles.cart} alt="Shopping cart" />
