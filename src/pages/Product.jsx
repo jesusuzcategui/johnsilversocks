@@ -6,11 +6,11 @@ import products from "../api/Api";
 
 
 const Product = () => {
-    const { idproduct } = useParams();
-    const navigate = useNavigate();
     const [currentProduct, setCurrentProduct] = useState(null);
 
     useEffect(() => {
+        const { idproduct } = useParams();
+        const navigate = useNavigate();
         let filter = products.filter((f) => f._id === parseInt(idproduct));
         if (filter.length === 0) {
             return navigate('/404');
